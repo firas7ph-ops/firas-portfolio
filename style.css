@@ -243,89 +243,172 @@ body:has(button:hover) .cursor-follower { width: 56px; height: 56px; opacity: 0.
 .hero {
   position: relative;
   height: 100svh;
-  min-height: 600px;
-  display: flex;
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   overflow: hidden;
+  background: var(--bg);
 }
 
-.hero-bg {
+/* Film grain overlay */
+.hero-grain {
   position: absolute;
   inset: 0;
-}
-.hero-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transform: scale(1.05);
-  animation: heroZoom 8s var(--ease-out) forwards;
-}
-@keyframes heroZoom {
-  to { transform: scale(1); }
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px;
+  mix-blend-mode: overlay;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(6,6,6,0.85) 0%,
-    rgba(6,6,6,0.6) 50%,
-    rgba(6,6,6,0.3) 100%
-  );
-}
-
+/* ── LEFT: Content ── */
 .hero-content {
   position: relative;
-  z-index: 2;
-  padding: 0 60px;
-  max-width: 900px;
+  z-index: 5;
+  padding: 0 60px 0 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-eyebrow {
   font-family: var(--font-ui);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.38em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
 }
 
 .hero-name {
   font-family: var(--font-display);
-  line-height: 0.9;
-  margin-bottom: 32px;
+  line-height: 0.88;
+  margin-bottom: 36px;
 }
 .hero-name-first {
   display: block;
-  font-size: clamp(5rem, 12vw, 11rem);
+  font-size: clamp(4.5rem, 9vw, 9rem);
   font-weight: 300;
   letter-spacing: -0.01em;
   color: var(--fg);
 }
 .hero-name-last {
   display: block;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
   font-weight: 300;
   font-style: italic;
   color: var(--gold-light);
-  padding-left: 0.08em;
+  padding-left: 0.06em;
 }
 
 .hero-bio {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--fg-dim);
-  margin-bottom: 48px;
-  max-width: 480px;
-  line-height: 1.8;
+  margin-bottom: 52px;
+  line-height: 2;
+  border-left: 1px solid rgba(201,169,110,0.3);
+  padding-left: 20px;
 }
 
 .hero-actions {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
+}
+
+/* ── RIGHT: Portrait ── */
+.hero-portrait-wrap {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  /* Cinematic grade: desaturate slightly, boost contrast */
+  filter: grayscale(15%) contrast(1.08) brightness(0.88);
+  transform: scale(1.04);
+  animation: portraitReveal 1.4s 0.6s var(--ease-out) forwards;
+  transform-origin: center top;
+}
+@keyframes portraitReveal {
+  to { transform: scale(1); }
+}
+
+/* Dark gradient bleeding from left into portrait */
+.hero-portrait-shadow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--bg) 0%,
+    rgba(6,6,6,0.6) 25%,
+    rgba(6,6,6,0.0) 60%
+  );
+  z-index: 2;
+}
+
+/* Gradient from bottom — grounds the image into the page */
+.hero-portrait-vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    var(--bg) 0%,
+    rgba(6,6,6,0.4) 20%,
+    transparent 55%
+  );
+  z-index: 2;
+}
+
+/* Gold color wash — cinematic warm grade */
+.hero-portrait-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(201,169,110,0.08) 0%,
+    rgba(201,169,110,0.04) 40%,
+    rgba(6,6,6,0.5) 100%
+  );
+  mix-blend-mode: overlay;
+  z-index: 3;
+}
+
+/* Thin gold vertical line between columns */
+.hero-deco-line {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(201,169,110,0.4) 30%,
+    rgba(201,169,110,0.4) 70%,
+    transparent
+  );
+  z-index: 6;
 }
 
 .btn-primary {
@@ -362,22 +445,22 @@ body:has(button:hover) .cursor-follower { width: 56px; height: 56px; opacity: 0.
 
 .hero-scroll-hint {
   position: absolute;
-  bottom: 40px;
-  left: 60px;
+  bottom: 36px;
+  left: 64px;
   display: flex;
   align-items: center;
   gap: 16px;
   font-family: var(--font-ui);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--fg-dim);
-  z-index: 2;
+  z-index: 10;
 }
 .scroll-line {
   width: 40px;
   height: 1px;
-  background: var(--gold);
+  background: rgba(201,169,110,0.3);
   position: relative;
   overflow: hidden;
 }
@@ -385,7 +468,7 @@ body:has(button:hover) .cursor-follower { width: 56px; height: 56px; opacity: 0.
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--fg);
+  background: var(--gold);
   transform: translateX(-100%);
   animation: scrollLine 2s ease-in-out infinite;
 }
@@ -844,7 +927,44 @@ body:has(button:hover) .cursor-follower { width: 56px; height: 56px; opacity: 0.
   .nav-hamburger { display: flex; }
   .nav { padding: 0 24px; }
 
-  .hero-content { padding: 0 28px; }
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+  }
+
+  .hero-portrait-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .hero-portrait-shadow {
+    background: linear-gradient(
+      to right,
+      rgba(6,6,6,0.92) 0%,
+      rgba(6,6,6,0.75) 60%,
+      rgba(6,6,6,0.5) 100%
+    );
+  }
+
+  .hero-portrait-vignette {
+    background: linear-gradient(
+      to top,
+      var(--bg) 0%,
+      rgba(6,6,6,0.6) 30%,
+      transparent 60%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 5;
+    padding: 0 28px;
+    padding-top: var(--nav-h);
+  }
+
+  .hero-deco-line { display: none; }
   .hero-scroll-hint { left: 28px; }
 
   .section-header { padding: 80px 28px 40px; }

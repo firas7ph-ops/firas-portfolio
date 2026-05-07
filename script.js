@@ -214,13 +214,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /* ===========================
-   PARALLAX — subtle on hero bg
+   PARALLAX — subtle on hero portrait
 =========================== */
-const heroBgImg = document.querySelector('.hero-bg-img');
-if (heroBgImg) {
+const heroPortrait = document.querySelector('.hero-portrait-img');
+if (heroPortrait) {
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    heroBgImg.style.transform = `scale(1) translateY(${y * 0.25}px)`;
+    heroPortrait.style.transform = `scale(1) translateY(${y * 0.15}px)`;
   }, { passive: true });
 }
 
