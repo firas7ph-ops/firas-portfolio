@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firas Almoaleem — Filmmaker & Photographer</title>
+  <meta name="description" content="Firas Almoaleem — Filmmaker & Photographer based in Saudi Arabia. Capturing authentic moments since 2013." />
+  <meta property="og:title" content="Firas Almoaleem — Filmmaker" />
+  <meta property="og:description" content="You can find all of my work here, enjoy!" />
+  <meta property="og:image" content="https://firas7ph.com/assets/images/card.jpg?v=76d98a29" />
+  <meta property="og:url" content="https://firas7ph.com" />
+  <meta name="theme-color" content="#060606" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">FIRAS</span>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">F7PH</a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="https://www.instagram.com/firas7ph" target="_blank" class="nav-link">Instagram</a>
+      <a href="https://wa.me/966596621773" target="_blank" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="mobile-link" data-close>Work</a>
+    <a href="#contact" class="mobile-link" data-close>Contact</a>
+    <a href="https://www.instagram.com/firas7ph" target="_blank" class="mobile-link">Instagram</a>
+    <a href="https://wa.me/966596621773" target="_blank" class="mobile-link">WhatsApp</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://firas7ph.com/assets/images/image04.jpg?v=76d98a29" alt="hero" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Filmmaker &amp; Photographer</p>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="hero-name-first">FIRAS</span>
+        <span class="hero-name-last"><em>Almoaleem</em></span>
+      </h1>
+      <p class="hero-bio reveal-up delay-2">
+        Capturing authentic moments since 2013. Working professionally since 2020.<br />
+        Based in Saudi Arabia.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Collaborate</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Work Grid -->
+  <section class="work-section" id="work">
+    <div class="section-header">
+      <p class="section-label">Selected Projects</p>
+      <h2 class="section-title reveal-up">The Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal-up" data-index="01">
+        <a href="#masnaf" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image04.jpg?v=76d98a29" alt="Masnaf" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">01</span>
+            <h3 class="project-card-name">Masnaf Restaurant</h3>
+            <p class="project-card-tags">Photo · Video · Social</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up delay-1" data-index="02">
+        <a href="#roban" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image06.jpg?v=76d98a29" alt="Roban" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">02</span>
+            <h3 class="project-card-name">Roban</h3>
+            <p class="project-card-tags">Photo · Video · Branding</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up delay-2" data-index="03">
+        <a href="#ochikn" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image10.jpg?v=76d98a29" alt="O'chikn" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">03</span>
+            <h3 class="project-card-name">O'chikn</h3>
+            <p class="project-card-tags">Photo · Video · Content</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up" data-index="04">
+        <a href="#goat" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image67.jpg?v=76d98a29" alt="GOAT Cafe" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">04</span>
+            <h3 class="project-card-name">GOAT Cafe</h3>
+            <p class="project-card-tags">Photo · Lifestyle</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up delay-1" data-index="05">
+        <a href="#mojeeb" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image68.jpg?v=76d98a29" alt="Mojeeb" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">05</span>
+            <h3 class="project-card-name">Mojeeb</h3>
+            <p class="project-card-tags">Photo · Video · Brand</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up delay-2" data-index="06">
+        <a href="#tull" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image51.jpg?v=76d98a29" alt="Tull Bakery" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">06</span>
+            <h3 class="project-card-name">Tull Bakery</h3>
+            <p class="project-card-tags">Photo · Video · Food</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal-up delay-1 card-wide" data-index="07">
+        <a href="#mjco" class="project-card-link">
+          <div class="project-card-img-wrap">
+            <img src="https://firas7ph.com/assets/images/image01.jpg?v=76d98a29" alt="MJ Co x Honor" class="project-card-img" loading="lazy" />
+            <div class="project-card-overlay">
+              <span class="project-card-cta">Explore →</span>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">07</span>
+            <h3 class="project-card-name">MJ Co × Honor</h3>
+            <p class="project-card-tags">Photo · Video · Commercial</p>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== PROJECT SECTIONS ========== -->
+
+  <!-- MASNAF -->
+  <section class="project-section" id="masnaf">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <img src="https://firas7ph.com/assets/images/image54.png?v=76d98a29" alt="Masnaf logo" class="project-logo" />
+        <h2 class="project-section-title reveal-up">Masnaf Restaurant</h2>
+      </div>
+      <p class="project-desc reveal-up">
+        As part of the social media marketing team at Masnaf Co., I've worked as a photographer and videographer executing a mix of styles — portraits, commercial work, events, and advertising projects.
+      </p>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video21.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video20.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video19.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video18.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video15.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video01.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video02.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image99.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image98.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image97.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image96.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image95.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image94.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image90.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image81.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image82.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image80.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image02.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image03.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image07.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image08.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image11.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- ROBAN -->
+  <section class="project-section" id="roban">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <img src="https://firas7ph.com/assets/images/image53.png?v=76d98a29" alt="Roban logo" class="project-logo" />
+        <h2 class="project-section-title reveal-up">Roban</h2>
+      </div>
+      <p class="project-desc reveal-up">
+        At Roban restaurant, I executed the account manager's vision — showcasing the restaurant as a light-vibed, vibrant, fast, and simple spot that serves seafood sandwiches.
+      </p>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video03.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video16.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video04.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image93.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image12.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image13.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image14.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image84.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image83.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image15.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image16.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image17.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image05.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image19.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image20.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- O'CHIKN -->
+  <section class="project-section" id="ochikn">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <img src="https://firas7ph.com/assets/images/image52.png?v=76d98a29" alt="O'chikn logo" class="project-logo" />
+        <h2 class="project-section-title reveal-up">O'chikn</h2>
+      </div>
+      <p class="project-desc reveal-up">
+        O'Chikn is a fast-food chicken restaurant focused on quality and value. Targeting a trendy, youthful audience — visuals that showcase food in relatable scenarios, making O'Chikn part of the everyday experience.
+      </p>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video17.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video05.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video06.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image92.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image91.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image88.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image85.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image86.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image87.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image21.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image22.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image23.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image24.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image25.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image26.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image27.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- GOAT -->
+  <section class="project-section" id="goat">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <h2 class="project-section-title reveal-up goat-title">GOAT Cafe.</h2>
+      </div>
+      <p class="project-desc reveal-up">
+        For GOAT, I created a visual story capturing the spirit of their cozy cafe and their connection with the local community — showcasing beautifully crafted brews in relatable everyday moments. Coffee as more than just a drink.
+      </p>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image28.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image29.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image30.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image31.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image32.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image33.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image34.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image35.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image36.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image37.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image38.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image39.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image40.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- MOJEEB -->
+  <section class="project-section" id="mojeeb">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <img src="https://firas7ph.com/assets/images/image41.png?v=76d98a29" alt="Mojeeb logo" class="project-logo" />
+        <h2 class="project-section-title reveal-up">Mojeeb</h2>
+      </div>
+      <p class="project-desc reveal-up">
+        Mojeeb is the typical yet modern neighborhood cafeteria — high quality with an eye-catching package. My focus was on showing the simplicity of the brand and its items.
+      </p>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video08.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video07.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image42.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image43.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image44.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image45.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image46.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image47.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image48.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image49.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image50.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image18.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- TULL -->
+  <section class="project-section" id="tull">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <img src="https://firas7ph.com/assets/images/image55.jpg?v=76d98a29" alt="Tull Bakery" class="project-logo project-logo-wide" />
+        <h2 class="project-section-title reveal-up">Tull Bakery.</h2>
+      </div>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video10.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video11.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video12.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video09.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image56.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image57.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image58.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image59.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image60.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image62.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image63.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image64.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image65.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image66.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image61.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- MJ CO x HONOR -->
+  <section class="project-section" id="mjco">
+    <div class="project-header">
+      <a href="#work" class="project-back">← Back to Work</a>
+      <div class="project-title-wrap">
+        <h2 class="project-section-title reveal-up">MJ Co. × Honor</h2>
+      </div>
+    </div>
+
+    <div class="video-row">
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video14.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+      <div class="video-item"><video src="https://firas7ph.com/assets/videos/video13.mp4?v=76d98a29" loop muted playsinline preload="none" class="hover-video"></video></div>
+    </div>
+
+    <div class="photo-grid">
+      <img src="https://firas7ph.com/assets/images/image75.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image76.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image77.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image78.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image79.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image74.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image70.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image71.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image72.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image73.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+      <img src="https://firas7ph.com/assets/images/image69.jpg?v=76d98a29" alt="" loading="lazy" class="grid-img" />
+    </div>
+    <div class="project-nav-bottom"><a href="#work" class="btn-ghost small">← All Projects</a></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <p class="section-label">Let's Work Together</p>
+      <h2 class="contact-title reveal-up">Ready to be <em>next?</em></h2>
+      <p class="contact-sub reveal-up">Have a project in mind? Let's create something memorable.</p>
+      <div class="contact-links reveal-up">
+        <a href="https://wa.me/966596621773" target="_blank" class="contact-btn whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/firas7ph" target="_blank" class="contact-btn instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a href="https://snapchat.com/t/Szu6oNlx" target="_blank" class="contact-btn snapchat">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.522 1.191.434 3.22.379 4.797l-.002.065c-.006.145-.006.288-.005.43.3-.083.535-.194.728-.363.193-.17.342-.402.342-.74 0-.318-.09-.554-.226-.738-.137-.184-.33-.338-.587-.44-.258-.103-.538-.15-.806-.108a.764.764 0 01-.064.006c-.052 0-.102-.01-.148-.03a.28.28 0 01-.149-.149.264.264 0 01-.008-.19c.01-.027.026-.05.049-.07l.092-.086c.156-.143.312-.264.437-.322.124-.058.213-.064.215-.064l.065-.004.044.007.003.002a.42.42 0 01.073.016c.215.076.38.176.523.3.144.124.264.271.376.43l.093.13a7.23 7.23 0 01.11.165c.072.116.14.244.193.386.053.14.089.296.089.473 0 .408-.151.745-.38.996-.23.25-.534.41-.857.494a3.28 3.28 0 01-.26.055 5.44 5.44 0 01-.45.05l-.012.001c.001.013 0 .026 0 .038-.025 1.128-.187 2.233-.56 3.24a7.15 7.15 0 01-1.548 2.515A7.617 7.617 0 0112.2 17.1a7.15 7.15 0 01-2.59.486c-.894 0-1.776-.162-2.596-.487a7.617 7.617 0 01-2.136-1.373A7.15 7.15 0 013.33 13.21c-.373-1.007-.534-2.112-.56-3.24 0-.012-.001-.025 0-.038a5.44 5.44 0 01-.45-.05 3.28 3.28 0 01-.26-.055c-.323-.084-.627-.244-.857-.494-.229-.251-.38-.588-.38-.996 0-.177.036-.333.089-.473.053-.142.12-.27.193-.386a7.23 7.23 0 01.11-.165l.093-.13c.112-.159.232-.306.376-.43.143-.124.308-.224.523-.3a.42.42 0 01.073-.016l.003-.002.044-.007.065.004c.002 0 .09.006.215.064.125.058.28.179.437.322l.092.086c.023.02.039.043.049.07a.264.264 0 01-.008.19.28.28 0 01-.149.149c-.046.02-.096.03-.148.03a.764.764 0 01-.064-.006c-.268-.042-.548.005-.806.108-.258.102-.45.256-.587.44-.137.184-.226.42-.226.738 0 .338.149.57.342.74.193.169.428.28.728.363.001-.142 0-.285-.005-.43l-.002-.065c-.055-1.577-.143-3.606.379-4.797C7.859 1.069 11.216.793 12.206.793z"/></svg>
+          Snapchat
+        </a>
+      </div>
+    </div>
+    <div class="contact-visual">
+      <img src="https://firas7ph.com/assets/images/image04.jpg?v=76d98a29" alt="" class="contact-img" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">FIRAS ALMOALEEM</span>
+      <span class="footer-copy">© 2025 · Filmmaker & Photographer</span>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/firas7ph" target="_blank">IG</a>
+        <a href="https://wa.me/966596621773" target="_blank">WA</a>
+        <a href="https://snapchat.com/t/Szu6oNlx" target="_blank">SC</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
